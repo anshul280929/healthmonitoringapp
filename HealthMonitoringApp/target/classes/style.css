@@ -1,46 +1,98 @@
 /* Main scene */
 .root {
-    -fx-font-family: "Arial","Helvetica",sans-serif;
-    -fx-background-color: #f4f4f9;
+    -fx-font-family: "Arial", "Helvetica", sans-serif;
+    -fx-background: linear-gradient(to bottom, #40afff, #ffffff); /* Light blue to white gradient */
     -fx-padding: 20px;
+}
+
+/* Header and Search Bar */
+.header {
+    -fx-background-color: #007bff; /* Blue header background */
+    -fx-padding: 10px 20px;
+    -fx-alignment: right;
+    -fx-spacing: 20px;
+}
+
+.header .search-bar {
+    -fx-pref-width: 150px;  /* Shorten the search bar */
+    -fx-font-size: 14px;
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 15px; /* Curved corners */
+    -fx-border-color: #0056b3;
+    -fx-alignment: right;
+    -fx-background-color: white; /* White background for search box */
+}
+
+.header .search-bar:focused {
+    -fx-border-color: #007bff; /* Highlight border on focus */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    -fx-background-color: #0056b3; /* Dark blue navigation menu */
+    -fx-padding: 10px;
+    -fx-spacing: 20px;
+    -fx-alignment: center;
+}
+
+.navbar .nav-item {
+    -fx-text-fill: white; /* White text for nav links */
+    -fx-font-size: 16px;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.navbar .nav-item:hover {
+    -fx-background-color: #007bff; /* Lighter blue on hover */
+    -fx-text-fill: white;
+}
+
+.navbar .nav-item.active {
+    -fx-background-color: #004085; /* Even darker blue for active tab */
+    -fx-text-fill: white;
 }
 
 /* Label Styling */
 .label {
-    -fx-font-size: 16px;
-    -fx-text-fill: #333;
+    -fx-font-size: 36px;
+    -fx-text-fill: #212529; /* Dark gray for text */
     -fx-padding: 5px;
 }
 
 /* Button Styling */
 .button {
-    -fx-background-color: #4CAF50;
-    -fx-text-fill: white;
-    -fx-font-size: 14px;
+    -fx-background-color: #e6f0ff; /* Light blue buttons */
+    -fx-text-fill: #007bff; /* Blue text for buttons */
+    -fx-font-size: 16px;
     -fx-padding: 10px 20px;
     -fx-border-radius: 5px;
     -fx-cursor: hand;
-    -fx-background-radius: 5px;
+    -fx-border-color: #007bff;
+    -fx-border-width: 2px;
 }
 
 .button:hover {
-    -fx-background-color: #45a049;
+    -fx-background-color: #cce5ff; /* Slightly darker blue on hover */
 }
 
 /* Layout Styling */
 .vbox {
-    -fx-spacing: 15px;
+    -fx-spacing: 20px; /* Increased spacing for better alignment */
     -fx-alignment: center;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    -fx-font-size: 14px;
+    -fx-background-color: #333;
+    -fx-text-fill: white;
 }
 
 /* Add a nice shadow around buttons */
 .button:focused {
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.3, 0, 0);
-}
-
-/* Custom tooltips */
-.tooltip {
-    -fx-font-size: 14px;
-    -fx-background-color: #333;
-    -fx-text-fill: white;
 }
