@@ -1,0 +1,46 @@
+/* Main scene */
+.root {
+    -fx-font-family: "Arial","Helvetica",sans-serif;
+    -fx-background-color: #f4f4f9;
+    -fx-padding: 20px;
+}
+
+/* Label Styling */
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333;
+    -fx-padding: 5px;
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Layout Styling */
+.vbox {
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+}
+
+/* Add a nice shadow around buttons */
+.button:focused {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.3, 0, 0);
+}
+
+/* Custom tooltips */
+.tooltip {
+    -fx-font-size: 14px;
+    -fx-background-color: #333;
+    -fx-text-fill: white;
+}
