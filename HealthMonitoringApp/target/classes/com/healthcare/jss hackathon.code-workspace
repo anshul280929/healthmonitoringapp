@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../.."
+		},
+		{
+			"name": "trial",
+			"path": "../../../../../../../trial"
+		},
+		{
+			"name": "serial:/COM3",
+			"uri": "serial://com3/"
+		}
+	],
+	"settings": {}
+}
