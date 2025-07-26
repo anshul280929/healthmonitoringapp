@@ -87,8 +87,8 @@ class GPSApp(App):
             time.sleep(5)
 
     def build(self):
-        open_cage_api_key = "b46db650459f4436955d6667e7b511c9"
-        google_api_key = "AIzaSyA1r953i5S_qZzl0AZu2ttHOyVvWr-l-gA"
+        open_cage_api_key = ""
+        google_api_key = ""
 
         layout = BoxLayout(orientation='vertical')
         gps_label = Label(text="Fetching GPS Data...", font_size=20)
