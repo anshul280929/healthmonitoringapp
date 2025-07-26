@@ -11,7 +11,7 @@ CORS(app)
 
 
 # Set your GROQ_API_KEY
-api_key = "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"
+api_key = ""
 os.environ["GROQ_API_KEY"] = api_key
 
 client = Groq(api_key=api_key)
