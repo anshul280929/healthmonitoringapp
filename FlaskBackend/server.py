@@ -45,8 +45,8 @@ def send_gps():
     global gps_data, current_step_index
     source_latitude = "12.9477852"
     source_longitude = "77.4800651"
-    open_cage_api_key = "b46db650459f4436955d6667e7b511c9"
-    google_api_key = "AIzaSyA1r953i5S_qZzl0AZu2ttHOyVvWr-l-gA"
+    open_cage_api_key = ""
+    google_api_key = ""
 
     # Convert source coordinates to address
     source_address = get_address_from_coordinates(source_latitude, source_longitude, open_cage_api_key)
